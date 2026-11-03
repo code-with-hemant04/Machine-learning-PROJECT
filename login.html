@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in · Dhule Health Connect</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-body">
+<div class="auth-wrap">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-brand"><div class="brand-mark"></div><b data-i="appName">Dhule Health Connect</b></div>
+    <div class="hero-copy">
+      <h2><span data-i="heroA">Care, closer to you</span><br><span style="color:#fff" data-i="heroB">when it matters most.</span></h2>
+      <p data-i="heroP">Find ambulances, doctors, blood banks, labs and medicines across Dhule — in English, Hindi and Marathi.</p>
+      <ul class="feature-list">
+        <li><i>🚑</i><span data-i="f1">Ambulance finder</span></li>
+        <li><i>🩺</i><span data-i="f2">Doctor appointments</span></li>
+        <li><i>🩸</i><span data-i="f3">Blood banks</span></li>
+        <li><i>🧪</i><span data-i="f4">Pathology labs</span></li>
+        <li><i>💊</i><span data-i="f5">Medical finder</span></li>
+        <li><i>📍</i><span data-i="f6">Live map &amp; location</span></li>
+      </ul>
+    </div>
+    <div class="hero-stats">
+      <div><strong>108</strong><span data-i="s1">Free ambulance</span></div>
+      <div><strong>24×7</strong><span data-i="s2">Emergency access</span></div>
+      <div><strong>3</strong><span data-i="s3">Languages</span></div>
+    </div>
+    <div class="pulse-ring"></div>
+  </section>
+
+  <!-- Form -->
+  <section class="panel">
+    <div class="panel-top">
+      <div class="lang-switch" id="lang-switch">
+        <button data-lang="en">EN</button><button data-lang="hi">हिं</button><button data-lang="mr">मरा</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h1 id="title" data-i="welcome">Welcome back</h1>
+      <p class="sub" id="subtitle" data-i="welcomeSub">Sign in to access your health dashboard.</p>
+
+      <div class="tabs" id="tabs">
+        <button data-tab="login" class="active" data-i="tabLogin">Sign in</button>
+        <button data-tab="register" data-i="tabRegister">Create account</button>
+      </div>
+
+      <div id="msg" class="notice hidden"></div>
+
+      <!-- LOGIN -->
+      <form id="form-login" novalidate>
+        <div class="field">
+          <label for="l-email" data-i="email">Email</label>
+          <div class="input-box"><span class="ico">✉️</span><input id="l-email" type="email" autocomplete="username" placeholder="you@example.com"></div>
+          <div class="err" data-err="l-email"></div>
+        </div>
+        <div class="field">
+          <label for="l-pass" data-i="password">Password</label>
+          <div class="input-box"><span class="ico">🔒</span><input id="l-pass" type="password" autocomplete="current-password" placeholder="••••••••">
+            <button type="button" class="eye" data-eye="l-pass" aria-label="Show password">👁️</button></div>
+          <div class="err" data-err="l-pass"></div>
+        </div>
+        <div class="row">
+          <label><input type="checkbox" id="l-remember"> <span data-i="remember">Remember me</span></label>
+          <button type="button" class="link" id="go-forgot" data-i="forgot">Forgot password?</button>
+        </div>
+        <button class="btn-primary" type="submit" id="btn-login" data-i="signIn">Sign in</button>
+        <div class="divider" data-i="or">or</div>
+        <button class="btn-ghost" type="button" id="btn-guest" data-i="guest">Continue as guest</button>
+        <div class="demo-box">
+          <b data-i="demoTitle">Demo account</b><br>
+          <code>demo@dhule.in</code> / <code>Demo@123</code>
+          <button type="button" class="link" id="fill-demo" data-i="fill">Fill</button>
+        </div>
+      </form>
+
+      <!-- REGISTER -->
+      <form id="form-register" class="hidden" novalidate>
+        <div class="field">
+          <label for="r-name" data-i="fullName">Full name</label>
+          <div class="input-box"><span class="ico">👤</span><input id="r-name" type="text" autocomplete="name" placeholder="Your name"></div>
+          <div class="err" data-err="r-name"></div>
+        </div>
+        <div class="field">
+          <label for="r-email" data-i="email">Email</label>
+          <div class="input-box"><span class="ico">✉️</span><input id="r-email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+          <div class="err" data-err="r-email"></div>
+        </div>
+        <div class="field">
+          <label for="r-phone" data-i="phone">Mobile number</label>
+          <div class="input-box"><span class="ico">📱</span><input id="r-phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel" placeholder="10-digit number"></div>
+          <div class="err" data-err="r-phone"></div>
+        </div>
+        <div class="field">
+          <label for="r-pass" data-i="password">Password</label>
+          <div class="input-box"><span class="ico">🔒</span><input id="r-pass" type="password" autocomplete="new-password" placeholder="Min 8 characters">
+            <button type="button" class="eye" data-eye="r-pass" aria-label="Show password">👁️</button></div>
+          <div class="strength"><i id="strength-bar"></i></div>
+          <div class="strength-label" id="strength-label"></div>
+          <div class="err" data-err="r-pass"></div>
+        </div>
+        <div class="field">
+          <label for="r-pass2" data-i="confirm">Confirm password</label>
+          <div class="input-box"><span class="ico">🔒</span><input id="r-pass2" type="password" autocomplete="new-password" placeholder="Repeat password"></div>
+          <div class="err" data-err="r-pass2"></div>
+        </div>
+        <button class="btn-primary" type="submit" id="btn-register" data-i="createAcc">Create account</button>
+      </form>
+
+      <!-- FORGOT -->
+      <form id="form-forgot" class="hidden" novalidate>
+        <div class="field">
+          <label for="f-email" data-i="email">Email</label>
+          <div class="input-box"><span class="ico">✉️</span><input id="f-email" type="email" placeholder="you@example.com"></div>
+          <div class="err" data-err="f-email"></div>
+        </div>
+        <div class="field">
+          <label for="f-pass" data-i="newPass">New password</label>
+          <div class="input-box"><span class="ico">🔒</span><input id="f-pass" type="password" placeholder="Min 8 characters">
+            <button type="button" class="eye" data-eye="f-pass" aria-label="Show password">👁️</button></div>
+          <div class="err" data-err="f-pass"></div>
+        </div>
+        <button class="btn-primary" type="submit" data-i="resetBtn">Reset password</button>
+        <div style="text-align:center;margin-top:14px"><button type="button" class="link" id="back-login" data-i="back">← Back to sign in</button></div>
+      </form>
+
+      <div class="sos-mini"><span data-i="emerg">Medical emergency?</span> <a href="tel:108">📞 Call 108</a></div>
+    </div>
+  </section>
+</div>
+<script src="js/auth.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

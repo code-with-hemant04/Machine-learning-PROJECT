@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhule Health Connect</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/auth.js"></script>
+<script>AUTH.requireLogin();</script>
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <div class="brand-text">
+        <div class="name" id="brand-name">Dhule Health Connect</div>
+        <div class="tag" id="brand-tag">Your city's emergency &amp; health directory</div>
+      </div>
+    </div>
+    <nav class="nav" id="sidebar-nav"></nav>
+    <div class="sidebar-foot">
+      <a class="sos-btn" href="tel:108" id="sos-btn">🚨 Emergency · 108</a>
+      <div class="sos-sub" id="sos-sub">Nearest ambulance services</div>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <button class="hamburger" id="hamburger">☰</button>
+        <div>
+          <h1 id="page-title">Dashboard</h1>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="loc-btn" id="loc-btn">📍 Use my location</button>
+        <div class="user-chip" id="user-chip">
+          <div class="avatar" id="user-avatar">U</div>
+          <span class="uname" id="user-name"></span>
+          <button class="logout-btn" id="logout-btn">Logout</button>
+        </div>
+        <div class="lang-switch">
+          <button data-lang="en">EN</button>
+          <button data-lang="hi">हिं</button>
+          <button data-lang="mr">मरा</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="emergency-strip">
+      <span id="emergency-text">Medical Emergency? Call 108 now — free, 24x7</span>
+    </div>
+
+    <main class="view" id="view-root"></main>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="js/data.js"></script>
+<script src="js/dhc-store.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

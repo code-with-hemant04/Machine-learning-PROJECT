@@ -1,0 +1,793 @@
+// Auto-generated from user-provided Dhule datasets (ambulance, blood banks, pathology labs, health helpline)
+// Coordinates are ESTIMATED from listed locality names for map placement (source data had no lat/lng).
+const REAL_DATA = {
+  "ambulances": [
+    {
+      "id": "amb-1",
+      "name": "Maharashtra Emergency Medical Services (MEMS)",
+      "category": "Government",
+      "contact": "108",
+      "hours": "24x7, free",
+      "address": "Dhule district/city and Maharashtra",
+      "source": "Government verified",
+      "lat": 20.89766,
+      "lng": 74.78372
+    },
+    {
+      "id": "amb-2",
+      "name": "Civil Hospital / District Hospital Dhule Ambulance",
+      "category": "Government",
+      "contact": "02562-237675",
+      "hours": "Emergency service; verify current dispatch availability",
+      "address": "Civil Hospital, Sakri Road, Dhule - 424001",
+      "source": "Government disaster-management document",
+      "lat": 20.908864,
+      "lng": 74.769812
+    },
+    {
+      "id": "amb-3",
+      "name": "Civil Hospital Dhule",
+      "category": "Government",
+      "contact": "02562-282875",
+      "hours": "Hospital 24x7; ambulance availability should be confirmed by phone",
+      "address": "In front of Public Works Building, near Santoshi Mata Temple, Sakri Road",
+      "source": "Government Dhule website",
+      "lat": 20.907628,
+      "lng": 74.7717
+    },
+    {
+      "id": "amb-4",
+      "name": "Shri Bhausaheb Hire Government Medical College / Hospital",
+      "category": "Government",
+      "contact": "02562-2394085",
+      "hours": "Not specified - verify by phone",
+      "address": "Not specified",
+      "source": "Government listing",
+      "lat": 20.91154,
+      "lng": 74.76702
+    },
+    {
+      "id": "amb-5",
+      "name": "Praneshwari Cardiac Ambulance Service",
+      "category": "Private",
+      "contact": "7972420078",
+      "hours": "24x7",
+      "address": "Mahindale, Kumar Nagar, Dhule 424001",
+      "source": "Local business listing",
+      "lat": 20.897432,
+      "lng": 74.7645
+    },
+    {
+      "id": "amb-6",
+      "name": "Lifecare Ambulance Service",
+      "category": "Private",
+      "contact": "7887577102",
+      "hours": "24x7 listed",
+      "address": "466/2 Plot, Chalisgaon Road, Vaibhav Nagar, Dhule 424001",
+      "source": "Local business listing",
+      "lat": 20.896312,
+      "lng": 74.757968
+    },
+    {
+      "id": "amb-7",
+      "name": "Life Guard Cardiac Ambulance",
+      "category": "Private",
+      "contact": "9226227786",
+      "hours": "24x7",
+      "address": "Lane No. 1, opposite Mamledar Kacheri, near Nagina Masjid, Bara Patthar Chowk",
+      "source": "Local business listing",
+      "lat": 20.89578,
+      "lng": 74.77912
+    },
+    {
+      "id": "amb-8",
+      "name": "Jejuri Ambulance Dhule",
+      "category": "Private",
+      "contact": "9561827744",
+      "hours": "24x7 listed",
+      "address": "Datt Digambar Society, Surat Bypass area, Dhule 424002",
+      "source": "Local business listing",
+      "lat": 20.914804,
+      "lng": 74.746316
+    },
+    {
+      "id": "amb-9",
+      "name": "Seva Superspeciality Hospital - Cardiac Ambulance",
+      "category": "Private Hospital",
+      "contact": "02562-246333 / 02562-247555",
+      "hours": "24x7",
+      "address": "Mission Compound, 15 Sakri Road, Dhule 424001",
+      "source": "Hospital's official website",
+      "lat": 20.907004,
+      "lng": 74.771048
+    },
+    {
+      "id": "amb-10",
+      "name": "Om Critical Care Center Pvt. Ltd.",
+      "category": "Private Hospital",
+      "contact": "02562-241313",
+      "hours": "Hospital 24x7; ambulance availability verify",
+      "address": "Dhule-Moghan Road, Agrawal Nagar, Dhule 424001",
+      "source": "Local listing + ambulance-provider database",
+      "lat": 20.907652,
+      "lng": 74.759596
+    },
+    {
+      "id": "amb-11",
+      "name": "Siddheshwar Multispeciality Hospital",
+      "category": "Private Hospital",
+      "contact": "02562-282100",
+      "hours": "Hospital 24x7; ambulance availability verify",
+      "address": "Garud Colony, near Ganpati Bridge, Deopur, Dhule 424002",
+      "source": "Local listing",
+      "lat": 20.88746,
+      "lng": 74.783144
+    },
+    {
+      "id": "amb-12",
+      "name": "Shree Vighnaharta Superspeciality Hospital",
+      "category": "Private Hospital",
+      "contact": "7030763070",
+      "hours": "Hospital 24x7; ambulance availability verify",
+      "address": "Nahata Nagar, Nakane Road, Dhule 424002",
+      "source": "Local listing",
+      "lat": 20.88082,
+      "lng": 74.788624
+    },
+    {
+      "id": "amb-13",
+      "name": "Shri Samarth Narayan Multispeciality Hospital",
+      "category": "Private Hospital",
+      "contact": "8788201280",
+      "hours": "Hospital 24x7; ambulance availability verify",
+      "address": "Agra Road, Deopur, Dhule 424005",
+      "source": "Local listing",
+      "lat": 20.88908,
+      "lng": 74.785364
+    },
+    {
+      "id": "amb-14",
+      "name": "Anjana Heart Hospital",
+      "category": "Not specified",
+      "contact": "9892224981",
+      "hours": "Not specified - verify by phone",
+      "address": "Not specified",
+      "source": "Local listing",
+      "lat": 20.90554,
+      "lng": 74.78032
+    }
+  ],
+  "bloodBanks": [
+    {
+      "id": "blood-1",
+      "name": "Civil Hospital Blood Bank (Government Blood Bank, Dhule)",
+      "type": "Government",
+      "address": "Civil Hospital Compound, Sakri Road, Dhule - 424001",
+      "phone": "02562-288833",
+      "mobile": "9422780176",
+      "email": "bloodbankdhule@gmail.com",
+      "service": "24x7",
+      "rating": "Not listed",
+      "source": "Maharashtra blood-management database (1108mh.in); secondary blood-bank directory lists 24x7",
+      "lat": 20.908916,
+      "lng": 74.772792
+    },
+    {
+      "id": "blood-2",
+      "name": "Shree Navjeevan Blood Bank (and Component Laboratory)",
+      "type": "Charitable/Trust",
+      "address": "Plot No. 39, S. No. 579/3+5, Sushil Nagar, behind Vaibhav Nagar, Dhule - 424001",
+      "phone": "02562-245662 / 02562-246289",
+      "mobile": "+91 2562297989 (listed call no.)",
+      "email": "navjeevan.dhule@gmail.com",
+      "service": "Not specified",
+      "rating": "3.9",
+      "source": "Maharashtra blood-management database (1108mh.in)",
+      "lat": 20.89456,
+      "lng": 74.757912
+    },
+    {
+      "id": "blood-3",
+      "name": "Jawahar Medical Foundation Blood Bank",
+      "type": "Charitable/Trust",
+      "address": "Hutatma Shirishkumar Nagar, opposite Jawahar Suthgirani, Morane, Sakri Road, Dhule - 424001",
+      "phone": "02562-276317 / 02562-277298",
+      "mobile": "Not listed",
+      "email": "Not listed",
+      "service": "Not specified",
+      "rating": "Not listed",
+      "source": "Blood-management database (1108mh.in); Maharashtra Charity Commissioner confirms Jawahar Medical Foundation / A.C.P.M. Medical College presence at Sakri Road, Morane",
+      "lat": 20.908796,
+      "lng": 74.773344
+    },
+    {
+      "id": "blood-4",
+      "name": "Jeevan Jyoti Blood Bank (Jeevan Jyoti Blood Center)",
+      "type": "Charitable",
+      "address": "3252, Agra Road, near Prabhakar Theater, Dhule - 424001",
+      "phone": "02562-232807",
+      "mobile": "+91 9607407777 (listed call no.)",
+      "email": "Not listed",
+      "service": "24x7 (local listing)",
+      "rating": "5.0",
+      "source": "Maharashtra blood-management database (1108mh.in)",
+      "lat": 20.911676,
+      "lng": 74.77904
+    },
+    {
+      "id": "blood-5",
+      "name": "Nirnay Janseva Blood Bank",
+      "type": "Charitable",
+      "address": "Fulwala Chowk, C.S. No. 1415/A/1/A, Lane No. 4, Dr. Odhekar Building, Agra Road, Dhule - 424001",
+      "phone": "02562-238262",
+      "mobile": "Not listed",
+      "email": "Not listed",
+      "service": "Not specified",
+      "rating": "5.0",
+      "source": "Maharashtra blood-management database (1108mh.in)",
+      "lat": 20.91292,
+      "lng": 74.78026
+    },
+    {
+      "id": "blood-6",
+      "name": "Shree Arpan Blood Centre",
+      "type": "Charitable",
+      "address": "Jain Oswal Boarding, Ganpati Road, near Santoshi Mata Mandir, Dhule - 424001",
+      "phone": "02562-229163 / 02562-229164",
+      "mobile": "+91 8888619391 (listed call no.)",
+      "email": "Not listed",
+      "service": "24x7 (listed)",
+      "rating": "5.0",
+      "source": "Maharashtra blood-management database (1108mh.in); separate blood-bank directory lists 24x7",
+      "lat": 20.906904,
+      "lng": 74.772832
+    },
+    {
+      "id": "blood-7",
+      "name": "Seva Hospital Blood Bank (Seva Super Speciality Hospital) - Hospital Blood Bank",
+      "type": "Hospital Blood Bank (Private)",
+      "address": "Mission Compound, Sakri Road, Dhule - 424001",
+      "phone": "02562-247555 / 02562-246333",
+      "mobile": "Not listed",
+      "email": "Not listed",
+      "service": "24x7 / 365 days",
+      "rating": "Not listed",
+      "source": "Hospital's official website; operates 24 hours a day, 365 days a year; facilities include blood components, platelet apheresis, irradiation, leucodepletion, antibody screening",
+      "lat": 20.909124,
+      "lng": 74.770656
+    }
+  ],
+  "healthContacts": [
+    {
+      "service": "General health advice",
+      "number": "104"
+    },
+    {
+      "service": "Emergency ambulance",
+      "number": "108"
+    },
+    {
+      "service": "District Health Office, Dhule",
+      "number": "02562-237139"
+    },
+    {
+      "service": "District Health Officer, Dhule",
+      "number": "02562-240896"
+    },
+    {
+      "service": "Mental-health guidance",
+      "number": "104"
+    },
+    {
+      "service": "Blood availability / blood-related guidance",
+      "number": "104"
+    },
+    {
+      "service": "Medical emergency",
+      "number": "108 or visit the nearest emergency department"
+    },
+    {
+      "service": "Vaccination information",
+      "number": "104"
+    },
+    {
+      "service": "Maternal and child health guidance",
+      "number": "104"
+    },
+    {
+      "service": "Public-health complaints/information",
+      "number": "104"
+    }
+  ],
+  "labs": [
+    {
+      "id": "lab-1",
+      "name": "Morya Pathology Lab",
+      "type": "Pathology Lab",
+      "address": "Plot No. 6, First Floor, Wadibhokar Rd, above Patil Diagnostics Centre, Neharu Nagar, Deopur, Dhule",
+      "pin": "424002",
+      "phone": "+91 93718 71817",
+      "timing": "24 Hours, Mon-Sun",
+      "source": "Local business listing",
+      "lat": 20.889476,
+      "lng": 74.78512
+    },
+    {
+      "id": "lab-2",
+      "name": "SUJYOT PATHOLOGY LAB",
+      "type": "Pathology Lab",
+      "address": "Fortune Plaza, Ganpati Bridge, near Santoshi Mata Chowk, beside Jain Mandir, Dhule",
+      "pin": "424001",
+      "phone": "+91 94227 75997",
+      "timing": "24 Hours, Mon-Sun",
+      "source": "Local business listing",
+      "lat": 20.907484,
+      "lng": 74.774404
+    },
+    {
+      "id": "lab-3",
+      "name": "Agrawal Pathology Lab",
+      "type": "Pathology/Diagnostic",
+      "address": "4th Lane, Bambu Galli, near Alankar Stores, Dhule",
+      "pin": "424001",
+      "phone": "+91 95522 36712",
+      "timing": "Mon-Sat 7:00 AM-10:00 PM; Sun 7:00 AM-6:00 PM",
+      "source": "Local + web listing",
+      "lat": 20.91418,
+      "lng": 74.78006
+    },
+    {
+      "id": "lab-4",
+      "name": "Thyrocare Diagnostic Lab",
+      "type": "Diagnostic/Blood Testing",
+      "address": "Shop No. 4, Agra-Mumbai Hwy, Walwadi, Mohamadi Nagar, Islampura, Dhule",
+      "pin": "424002",
+      "phone": "+91 92096 93519",
+      "timing": "7:00 AM-8:00 PM daily",
+      "source": "Local business listing",
+      "lat": 20.891948,
+      "lng": 74.778096
+    },
+    {
+      "id": "lab-5",
+      "name": "Thyrocare Blood Test Lab",
+      "type": "Diagnostic/Blood Testing",
+      "address": "Shop No. 2, Arun Bungalow, opposite Raka Park, Shivaji Nagar, Walwadi, Deopur, Dhule",
+      "pin": "424002",
+      "phone": "+91 98346 26078",
+      "timing": "7:00 AM-8:00 PM daily",
+      "source": "Local business listing",
+      "lat": 20.888488,
+      "lng": 74.782208
+    },
+    {
+      "id": "lab-6",
+      "name": "Metropolis Labs - Rana Pratap Chowk",
+      "type": "Diagnostic/Pathology",
+      "address": "Balasaheb Nashikkar Shopping Center, Rana Pratap Chowk, opposite Swastik Theater, Dhule",
+      "pin": "424001",
+      "phone": "020 4717 0037",
+      "timing": "Mon-Sat 7:30 AM-8:00 PM; Sun 7:30 AM-1:00 PM",
+      "source": "Metropolis official + local listing",
+      "lat": 20.903736,
+      "lng": 74.77602
+    },
+    {
+      "id": "lab-7",
+      "name": "Metropolis Labs - Deopur",
+      "type": "Diagnostic/Pathology",
+      "address": "Nakane Rd, behind Sidhheshwar Hospital, Garud Colony, Deopur, Dhule",
+      "pin": "424002",
+      "phone": "020 4717 0435",
+      "timing": "Mon-Sat 8:00 AM-8:00 PM; Sun 8:00 AM-2:00 PM",
+      "source": "Local business listing",
+      "lat": 20.88804,
+      "lng": 74.784868
+    },
+    {
+      "id": "lab-8",
+      "name": "Shah Pathology Lab",
+      "type": "Pathology Lab",
+      "address": "1419, Lane No. 4, opposite Bank of Baroda, Navnath Nagar, Dhule",
+      "pin": "424001",
+      "phone": "02562 234620",
+      "timing": "Mon-Sat 8:00 AM-9:00 PM; Sun Closed",
+      "source": "Local + web listing",
+      "lat": 20.901588,
+      "lng": 74.77066
+    },
+    {
+      "id": "lab-9",
+      "name": "Shree Samarth Pathology Lab",
+      "type": "Pathology Lab",
+      "address": "Sneha Nagar, Station Rd, near Nutan Padvi High School, Green Park, Dhule",
+      "pin": "424001",
+      "phone": "+91 93598 91351",
+      "timing": "Mon-Sat 8:00 AM-8:00 PM; Sun 8:00 AM-5:00 PM",
+      "source": "Local business listing",
+      "lat": 20.901416,
+      "lng": 74.789432
+    },
+    {
+      "id": "lab-10",
+      "name": "Lupin Diagnostics",
+      "type": "Pathology/Diagnostic",
+      "address": "Shop No. 16, Poonam Tower, 80 Feet Rd, Tiranga Chowk, Dhule",
+      "pin": "424001",
+      "phone": "+91 74001 69631",
+      "timing": "7:30 AM-7:30 PM daily",
+      "source": "Local business listing",
+      "lat": 20.906676,
+      "lng": 74.761532
+    },
+    {
+      "id": "lab-11",
+      "name": "Apollo Diagnostics",
+      "type": "Diagnostic/Blood Testing",
+      "address": "Shop No. 5, Plot No. 147/1A, Jaihind Colony, Deopur, Dhule",
+      "pin": "424002",
+      "phone": "+91 99235 81166",
+      "timing": "6:30 AM-8:00 PM daily",
+      "source": "Local business listing",
+      "lat": 20.885948,
+      "lng": 74.784752
+    },
+    {
+      "id": "lab-12",
+      "name": "Newadkar Pathology Lab",
+      "type": "Pathology Lab",
+      "address": "Wadibhokar Rd, near Panchayat Samiti, Deopur, Dhule",
+      "pin": "424002",
+      "phone": "02562 237590",
+      "timing": "Mon-Sat 7:30 AM-7:30 PM; Sunday needs verification",
+      "source": "Local + web listing",
+      "lat": 20.887052,
+      "lng": 74.783124
+    },
+    {
+      "id": "lab-13",
+      "name": "Patil Diagnostic Centre",
+      "type": "Diagnostic Centre",
+      "address": "Wadibhokar Rd, near Uttarmukhi Maruti Mandir, Neharu Nagar, Deopur, Dhule",
+      "pin": "424002",
+      "phone": "Not listed",
+      "timing": "Mon-Sat 10:00 AM-7:00 PM",
+      "source": "Local business listing",
+      "lat": 20.886636,
+      "lng": 74.784808
+    },
+    {
+      "id": "lab-14",
+      "name": "Hi-Tech Diagnostic & Research Centre",
+      "type": "Diagnostic/Laboratory",
+      "address": "Behind Mahanagarpalika, Dhule",
+      "pin": "424001",
+      "phone": "02562 237870",
+      "timing": "24 Hours, Mon-Sun",
+      "source": "Local business listing",
+      "lat": 20.90538,
+      "lng": 74.76522
+    },
+    {
+      "id": "lab-15",
+      "name": "Krsnaa Diagnostics - Swastik Theatre area",
+      "type": "Diagnostic/Blood Testing",
+      "address": "Near Dhule Municipal Corporation, Old Swastik Theatre, Phule Colony, Dhule",
+      "pin": "424001",
+      "phone": "020 6814 6814",
+      "timing": "24 Hours listed",
+      "source": "Local business listing",
+      "lat": 20.90228,
+      "lng": 74.775752
+    },
+    {
+      "id": "lab-16",
+      "name": "Nirnay Diagnostics & Research Center",
+      "type": "Diagnostic Centre",
+      "address": "Opposite Ganpati Palace, Dhule",
+      "pin": "424001",
+      "phone": "02562 234554",
+      "timing": "24 Hours listed",
+      "source": "Local business listing",
+      "lat": 20.90358,
+      "lng": 74.78212
+    },
+    {
+      "id": "lab-17",
+      "name": "Dhanashree Pathology Lab",
+      "type": "Pathology Lab",
+      "address": "Agra Rd, Mangalmurti Colony, Dhule",
+      "pin": "424005",
+      "phone": "Not listed",
+      "timing": "Mon-Sat 8:00 AM-8:30 PM; Sunday needs verification",
+      "source": "Local business listing",
+      "lat": 20.914848,
+      "lng": 74.782028
+    },
+    {
+      "id": "lab-18",
+      "name": "Vimla Diagnostic Center",
+      "type": "Diagnostic Centre",
+      "address": "2892, Lane No. 4, near Jugal Vastralaya, Ullas Nagar, Navnath Nagar, Dhule",
+      "pin": "424001",
+      "phone": "Not listed",
+      "timing": "9:40 AM-10:00 PM daily",
+      "source": "Local business listing",
+      "lat": 20.899132,
+      "lng": 74.767368
+    },
+    {
+      "id": "lab-19",
+      "name": "Aashay Diagnostic Laboratory",
+      "type": "Diagnostic Laboratory",
+      "address": "Maharashtra State Highway 14, Professor Colony, Tulsiram Nagar, Dhule",
+      "pin": "424002",
+      "phone": "+91 93701 49622",
+      "timing": "24 Hours listed",
+      "source": "Local business listing",
+      "lat": 20.90066,
+      "lng": 74.7837
+    },
+    {
+      "id": "lab-20",
+      "name": "Devendra Clinical Lab & Anuvansh Genetics",
+      "type": "Clinical/Blood Testing",
+      "address": "Shiv Tirth, Santoshi Mata Chowk, Sakri Rd, Dhule",
+      "pin": "424001",
+      "phone": "Not listed",
+      "timing": "Timing not reliably available",
+      "source": "Local business listing",
+      "lat": 20.905688,
+      "lng": 74.773352
+    },
+    {
+      "id": "lab-21",
+      "name": "Ajinkya Pathology Lab",
+      "type": "Pathology Lab",
+      "address": "WQ38+6J7, Sakri Rd, Vikas Colony, Dhule",
+      "pin": "424001",
+      "phone": "02562 249998",
+      "timing": "24 Hours listed",
+      "source": "Web listing",
+      "lat": 20.906,
+      "lng": 74.77098
+    },
+    {
+      "id": "lab-22",
+      "name": "Suvidha Pathology Lab",
+      "type": "Pathology Lab",
+      "address": "Opposite Mission Compound, Sakri Road, Dhule",
+      "pin": "424001",
+      "phone": "Not listed",
+      "timing": "Mon-Sat 9:00 AM-8:00 PM; Sun 5:30 AM-12:00 AM listed",
+      "source": "Web listing; verify",
+      "lat": 20.908624,
+      "lng": 74.771292
+    },
+    {
+      "id": "lab-23",
+      "name": "Shree Datt Pathology",
+      "type": "Pathology Lab",
+      "address": "19, Rajnigandha Plaza, Datt Mandir Road, Deopur, Dhule",
+      "pin": "424002",
+      "phone": "Not listed",
+      "timing": "Mon-Sat 9:30 AM-9:00 PM; Sun Closed",
+      "source": "Web listing; verify",
+      "lat": 20.889084,
+      "lng": 74.78278
+    },
+    {
+      "id": "lab-24",
+      "name": "Agilus Diagnostics - Bhagwa Chowk",
+      "type": "Pathology/Diagnostic",
+      "address": "Gaikwad Complex, Lane No. 5, Bhagwa Chowk, Dhule",
+      "pin": "424001",
+      "phone": "08037 228689",
+      "timing": "Mon-Sat 7:30 AM-8:00 PM; Sun 7:30 AM-2:00 PM",
+      "source": "Official Agilus listing",
+      "lat": 20.906512,
+      "lng": 74.766288
+    },
+    {
+      "id": "lab-25",
+      "name": "Thyrocare Diagnostic Lab - Collectorate",
+      "type": "Diagnostic/Blood Testing",
+      "address": "Leela Complex, 1263, Shop No. 9/10, Agra Rd, opposite Adarsh Pustakalaya, Dhule",
+      "pin": "424001",
+      "phone": "022 3090 0000",
+      "timing": "Mon-Sat 8:00 AM-8:00 PM; Sunday needs verification",
+      "source": "Local business listing",
+      "lat": 20.914404,
+      "lng": 74.780292
+    }
+  ]
+};
+
+// ---------------------------------------------------------------------------
+// Hospitals derived from the ambulance dataset's "Private Hospital"/"Government"
+// entries that are actual hospitals (used for the disease-guide recommendations
+// and appointment booking). Specialty tags are general assumptions for a
+// multi-specialty hospital of that type — call ahead to confirm a doctor is available.
+// ---------------------------------------------------------------------------
+const HOSPITALS = [
+  { id: 'h1', name: 'Civil Hospital Dhule', type: 'Government', phone: '02562-282875',
+    address: 'In front of Public Works Building, near Santoshi Mata Temple, Sakri Road, Dhule',
+    specialties: ['General Medicine','Emergency','Orthopedics','Pediatrics','Gynecology','Surgery'],
+    lat: 20.9058, lng: 74.7738 },
+  { id: 'h2', name: 'Shri Bhausaheb Hire Government Medical College & Hospital', type: 'Government',
+    phone: '02562-2394085', address: 'Dhule (govt. listing — verify by phone)',
+    specialties: ['General Medicine','Cardiology','Orthopedics','Surgery','Pediatrics','Gynecology','Neurology'],
+    lat: 20.9025, lng: 74.7712 },
+  { id: 'h3', name: 'Seva Superspeciality Hospital', type: 'Private Hospital', phone: '02562-246333',
+    address: 'Mission Compound, 15 Sakri Road, Dhule 424001',
+    specialties: ['Cardiology','Nephrology','Critical Care','General Surgery'], lat: 20.9061, lng: 74.7729 },
+  { id: 'h4', name: 'Om Critical Care Center Pvt. Ltd.', type: 'Private Hospital', phone: '02562-241313',
+    address: 'Dhule-Moghan Road, Agrawal Nagar, Dhule 424001',
+    specialties: ['Critical Care','General Medicine','Emergency'], lat: 20.9098, lng: 74.7576 },
+  { id: 'h5', name: 'Siddheshwar Multispeciality Hospital', type: 'Private Hospital', phone: '02562-282100',
+    address: 'Garud Colony, near Ganpati Bridge, Deopur, Dhule 424002',
+    specialties: ['Orthopedics','General Surgery','Gynecology','Pediatrics'], lat: 20.8949, lng: 74.7715 },
+  { id: 'h6', name: 'Shree Vighnaharta Superspeciality Hospital', type: 'Private Hospital', phone: '7030763070',
+    address: 'Nahata Nagar, Nakane Road, Dhule 424002',
+    specialties: ['Cardiology','Nephrology','Urology','General Medicine'], lat: 20.8823, lng: 74.7908 },
+  { id: 'h7', name: 'Shri Samarth Narayan Multispeciality Hospital', type: 'Private Hospital', phone: '8788201280',
+    address: 'Agra Road, Deopur, Dhule 424005',
+    specialties: ['General Medicine','Surgery','Gynecology','ENT'], lat: 20.8871, lng: 74.7841 },
+  { id: 'h8', name: 'Anjana Heart Hospital', type: 'Private Hospital', phone: '9892224981',
+    address: 'Dhule (verify address by phone)', specialties: ['Cardiology'], lat: 20.9010, lng: 74.7820 }
+];
+
+// ---------------------------------------------------------------------------
+// Disease / symptom guide — general, non-diagnostic health guidance only.
+// Maps a common condition/symptom to the specialist type to see, urgency,
+// a plain-language note, and which resource types the app should surface.
+// Translated labels for English / Hindi / Marathi (local-language assistance).
+// ---------------------------------------------------------------------------
+const DISEASE_GUIDE = [
+  { id:'chest-pain', specialty:'Cardiology', urgency:'emergency',
+    en:{name:'Chest pain / suspected heart attack', note:'Treat as an emergency. Call 108 immediately; do not drive yourself.'},
+    hi:{name:'सीने में दर्द / दिल का दौरा', note:'इसे आपातकाल मानें। तुरंत 108 पर कॉल करें, खुद गाड़ी न चलाएं।'},
+    mr:{name:'छातीत दुखणे / हृदयविकाराचा झटका', note:'हे आणीबाणी समजा. लगेच 108 वर कॉल करा, स्वतः गाडी चालवू नका.'} },
+  { id:'high-fever', specialty:'General Medicine', urgency:'soon',
+    en:{name:'High fever (3+ days)', note:'See a general physician; ask about a blood test if fever persists.'},
+    hi:{name:'तेज़ बुखार (3+ दिन)', note:'जनरल फिजिशियन को दिखाएं; बुखार बना रहे तो ब्लड टेस्ट के बारे में पूछें।'},
+    mr:{name:'तीव्र ताप (3+ दिवस)', note:'जनरल फिजिशियनला भेटा; ताप कायम राहिल्यास रक्त तपासणीबद्दल विचारा.'} },
+  { id:'breathing-difficulty', specialty:'Pulmonology / Emergency', urgency:'emergency',
+    en:{name:'Severe breathlessness', note:'Emergency — call 108 or go to the nearest hospital casualty right away.'},
+    hi:{name:'सांस लेने में गंभीर तकलीफ', note:'आपातकाल — 108 पर कॉल करें या तुरंत नज़दीकी अस्पताल जाएं।'},
+    mr:{name:'श्वास घेण्यास गंभीर त्रास', note:'आणीबाणी — 108 वर कॉल करा किंवा लगेच जवळच्या रुग्णालयात जा.'} },
+  { id:'pregnancy-labor', specialty:'Gynecology', urgency:'emergency',
+    en:{name:'Labor pain / pregnancy emergency', note:'Call 108 or your maternity hospital; keep antenatal records ready.'},
+    hi:{name:'प्रसव पीड़ा / गर्भावस्था आपातकाल', note:'108 पर कॉल करें या अपने अस्पताल को सूचित करें; जांच रिपोर्ट साथ रखें।'},
+    mr:{name:'प्रसूती वेदना / गर्भावस्था आणीबाणी', note:'108 वर कॉल करा किंवा रुग्णालयाला कळवा; तपासणी कागदपत्रे सोबत ठेवा.'} },
+  { id:'accident-trauma', specialty:'Orthopedics / Emergency', urgency:'emergency',
+    en:{name:'Accident / fracture / heavy bleeding', note:'Call 108. Do not move a suspected fracture unnecessarily.'},
+    hi:{name:'दुर्घटना / फ्रैक्चर / अधिक रक्तस्राव', note:'108 पर कॉल करें। संदिग्ध फ्रैक्चर को अनावश्यक रूप से न हिलाएं।'},
+    mr:{name:'अपघात / फ्रॅक्चर / जास्त रक्तस्त्राव', note:'108 वर कॉल करा. संशयित फ्रॅक्चर उगाच हलवू नका.'} },
+  { id:'diabetes', specialty:'General Medicine / Endocrinology', urgency:'routine',
+    en:{name:'Diabetes management', note:'Regular sugar checks at a pathology lab; consult a physician for medication.'},
+    hi:{name:'डायबिटीज़ प्रबंधन', note:'पैथोलॉजी लैब में नियमित शुगर जांच कराएं; दवा के लिए फिजिशियन से मिलें।'},
+    mr:{name:'मधुमेह व्यवस्थापन', note:'पॅथॉलॉजी लॅबमध्ये नियमित साखर तपासणी करा; औषधासाठी डॉक्टरांना भेटा.'} },
+  { id:'hypertension', specialty:'Cardiology / General Medicine', urgency:'soon',
+    en:{name:'High blood pressure', note:'Get BP checked and see a physician; avoid excess salt.'},
+    hi:{name:'उच्च रक्तचाप', note:'बीपी जांच कराएं और फिजिशियन से मिलें; नमक कम करें।'},
+    mr:{name:'उच्च रक्तदाब', note:'बीपी तपासा आणि डॉक्टरांना भेटा; मीठ कमी करा.'} },
+  { id:'skin-allergy', specialty:'Dermatology', urgency:'routine',
+    en:{name:'Skin rash / allergy', note:'See a dermatologist; note what triggered it before your visit.'},
+    hi:{name:'त्वचा पर रैश / एलर्जी', note:'त्वचा विशेषज्ञ से मिलें; कारण याद रखकर बताएं।'},
+    mr:{name:'त्वचेवर पुरळ / अ‍ॅलर्जी', note:'त्वचारोग तज्ज्ञांना भेटा; कारण लक्षात ठेवून सांगा.'} },
+  { id:'child-fever', specialty:'Pediatrics', urgency:'soon',
+    en:{name:'Fever or illness in a child', note:'See a pediatrician; seek emergency care if the child is lethargic or not feeding.'},
+    hi:{name:'बच्चे में बुखार या बीमारी', note:'बाल रोग विशेषज्ञ से मिलें; बच्चा सुस्त हो या दूध न पिए तो तुरंत अस्पताल जाएं।'},
+    mr:{name:'मुलामध्ये ताप किंवा आजार', note:'बालरोगतज्ज्ञांना भेटा; मूल सुस्त असल्यास किंवा दूध पीत नसल्यास लगेच रुग्णालयात जा.'} },
+  { id:'stomach-pain', specialty:'General Medicine / Gastroenterology', urgency:'soon',
+    en:{name:'Severe abdominal pain', note:'See a physician promptly; seek emergency care if pain is sudden and severe.'},
+    hi:{name:'पेट में तेज दर्द', note:'जल्द फिजिशियन से मिलें; अचानक व तेज दर्द हो तो आपातकालीन सेवा लें।'},
+    mr:{name:'पोटात तीव्र दुखणे', note:'लवकर डॉक्टरांना भेटा; अचानक व तीव्र दुखत असल्यास आणीबाणी सेवा घ्या.'} },
+  { id:'joint-pain', specialty:'Orthopedics', urgency:'routine',
+    en:{name:'Joint or bone pain', note:'See an orthopedic doctor; an X-ray may be advised.'},
+    hi:{name:'जोड़ों या हड्डी में दर्द', note:'हड्डी रोग विशेषज्ञ से मिलें; एक्स-रे की सलाह दी जा सकती है।'},
+    mr:{name:'सांधे किंवा हाडांचे दुखणे', note:'हाडांच्या डॉक्टरांना भेटा; एक्स-रेचा सल्ला दिला जाऊ शकतो.'} },
+  { id:'eye-problem', specialty:'Ophthalmology', urgency:'routine',
+    en:{name:'Eye pain / vision problem', note:'See an eye specialist, especially if vision changed suddenly.'},
+    hi:{name:'आंख में दर्द / दृष्टि समस्या', note:'नेत्र विशेषज्ञ से मिलें, खासकर अचानक दृष्टि बदलने पर।'},
+    mr:{name:'डोळे दुखणे / दृष्टी समस्या', note:'नेत्रतज्ज्ञांना भेटा, विशेषतः दृष्टी अचानक बदलल्यास.'} },
+  { id:'dental', specialty:'Dentistry', urgency:'routine',
+    en:{name:'Toothache / dental issue', note:'See a dentist; for facial swelling with fever, seek care sooner.'},
+    hi:{name:'दांत दर्द / दंत समस्या', note:'दंत चिकित्सक से मिलें; बुखार के साथ चेहरे पर सूजन हो तो जल्दी दिखाएं।'},
+    mr:{name:'दात दुखणे / दंत समस्या', note:'दंतवैद्यांना भेटा; तापासह चेहऱ्यावर सूज असल्यास लवकर दाखवा.'} },
+  { id:'mental-health', specialty:'Psychiatry / Counselling', urgency:'routine',
+    en:{name:'Stress, anxiety or low mood', note:'Talk to a counsellor or doctor. Dial 104 for general health guidance.'},
+    hi:{name:'तनाव, चिंता या उदासी', note:'काउंसलर या डॉक्टर से बात करें। सामान्य सहायता के लिए 104 डायल करें।'},
+    mr:{name:'ताण, चिंता किंवा उदासीनता', note:'समुपदेशक किंवा डॉक्टरांशी बोला. सामान्य मार्गदर्शनासाठी 104 डायल करा.'} },
+  { id:'snake-bite', specialty:'Emergency / Critical Care', urgency:'emergency',
+    en:{name:'Snake bite / poisoning', note:'Emergency. Call 108 now; keep the person still and go to the nearest hospital.'},
+    hi:{name:'सांप का काटना / जहर', note:'आपातकाल। अभी 108 पर कॉल करें; व्यक्ति को स्थिर रखें और नज़दीकी अस्पताल जाएं।'},
+    mr:{name:'सर्पदंश / विषबाधा', note:'आणीबाणी. आत्ताच 108 वर कॉल करा; व्यक्तीला स्थिर ठेवा आणि जवळच्या रुग्णालयात जा.'} },
+  { id:'burn-injury', specialty:'Emergency / General Surgery', urgency:'emergency',
+    en:{name:'Burn injury', note:'Cool the burn with clean water and go to the hospital; call 108 for severe burns.'},
+    hi:{name:'जलने की चोट', note:'साफ पानी से जले हुए हिस्से को ठंडा करें और अस्पताल जाएं; गंभीर हो तो 108 पर कॉल करें।'},
+    mr:{name:'भाजण्याची जखम', note:'स्वच्छ पाण्याने भाजलेला भाग थंड करा आणि रुग्णालयात जा; गंभीर असल्यास 108 वर कॉल करा.'} },
+  { id:'ent-issue', specialty:'ENT', urgency:'routine',
+    en:{name:'Ear, nose or throat issue', note:'See an ENT specialist for persistent pain, discharge or hearing changes.'},
+    hi:{name:'कान, नाक या गले की समस्या', note:'लगातार दर्द, स्राव या सुनने में बदलाव हो तो ईएनटी विशेषज्ञ से मिलें।'},
+    mr:{name:'कान, नाक किंवा घशाची समस्या', note:'सतत दुखणे, स्राव किंवा ऐकण्यात बदल असल्यास ईएनटी तज्ज्ञांना भेटा.'} },
+  { id:'kidney-urinary', specialty:'Nephrology / Urology', urgency:'soon',
+    en:{name:'Kidney or urinary problem', note:'See a physician soon; a urine/blood test at a pathology lab may be needed.'},
+    hi:{name:'किडनी या पेशाब संबंधी समस्या', note:'जल्द फिजिशियन से मिलें; पैथोलॉजी लैब में यूरिन/ब्लड टेस्ट की जरूरत हो सकती है।'},
+    mr:{name:'किडनी किंवा लघवीसंबंधी समस्या', note:'लवकर डॉक्टरांना भेटा; पॅथॉलॉजी लॅबमध्ये लघवी/रक्त तपासणी लागू शकते.'} },
+  { id:'blood-donation', specialty:'Blood Bank', urgency:'routine',
+    en:{name:'Need blood / want to donate blood', note:'Contact a nearby blood bank directly to check availability or donate.'},
+    hi:{name:'खून चाहिए / रक्तदान करना है', note:'उपलब्धता जांचने या रक्तदान के लिए नज़दीकी ब्लड बैंक से सीधे संपर्क करें।'},
+    mr:{name:'रक्त हवे आहे / रक्तदान करायचे आहे', note:'उपलब्धता तपासण्यासाठी किंवा रक्तदानासाठी जवळच्या ब्लड बँकेशी थेट संपर्क साधा.'} },
+  { id:'general-checkup', specialty:'General Medicine', urgency:'routine',
+    en:{name:'Routine health check-up', note:'Book with a general physician; pathology labs nearby offer full-body packages.'},
+    hi:{name:'सामान्य स्वास्थ्य जांच', note:'जनरल फिजिशियन के पास बुक करें; नज़दीकी पैथोलॉजी लैब फुल-बॉडी पैकेज देती हैं।'},
+    mr:{name:'सामान्य आरोग्य तपासणी', note:'जनरल फिजिशियनकडे बुक करा; जवळील पॅथॉलॉजी लॅब फुल-बॉडी पॅकेज देतात.'} }
+];
+
+// ---------------------------------------------------------------------------
+// UI translations — English / Hindi / Marathi (local-language assistance)
+// ---------------------------------------------------------------------------
+const I18N = {
+  en: {
+    appName:'Dhule Health Connect', tagline:'Your city\'s emergency & health directory',
+    nav_dashboard:'Dashboard', nav_appointment:'Doctor Appointment', nav_ambulance:'Ambulance Finder',
+    nav_medical:'Medical Finder', nav_labs:'Pathology Labs', nav_blood:'Blood Banks',
+    nav_disease:'Disease Guide', nav_helpline:'Helpline Directory',
+    emergency_banner:'Medical Emergency? Call 108 now — free, 24x7',
+    call:'Call', directions:'Directions', nearMe:'Use my location', distanceAway:'away',
+    searchPlaceholder:'Search…', bookNow:'Book appointment', viewOnMap:'View on map',
+    specialty:'Specialty', hospital:'Hospital', selectDate:'Date', selectTime:'Time',
+    patientName:'Patient name', patientPhone:'Phone number', confirmBooking:'Confirm booking',
+    bookingSuccess:'Appointment request sent! Reference', myBookings:'My bookings', noBookings:'No bookings yet.',
+    findingLocation:'Locating you…', locationDenied:'Location unavailable — showing all Dhule listings.',
+    liveFromOSM:'Live results from OpenStreetMap near your location', category:'Category',
+    urgency_emergency:'Emergency', urgency_soon:'See doctor soon', urgency_routine:'Routine',
+    recommendedFor:'Recommended for', nearestHospitals:'Nearest matching hospitals',
+    nearestLabs:'Nearby pathology labs', nearestAmbulance:'Nearest ambulance services',
+    nearestBlood:'Nearby blood banks', selectCondition:'Select a symptom or condition',
+    language:'Language', home:'Home', cancel:'Cancel', status:'Status', address:'Address',
+    hours:'Hours / Timing', verified:'Source', type:'Type', all:'All', gettingDirections:'Opening map directions…'
+  },
+  hi: {
+    appName:'धुळे हेल्थ कनेक्ट', tagline:'आपके शहर की आपातकालीन व स्वास्थ्य डायरेक्टरी',
+    nav_dashboard:'डैशबोर्ड', nav_appointment:'डॉक्टर अपॉइंटमेंट', nav_ambulance:'एम्बुलेंस खोजें',
+    nav_medical:'मेडिकल स्टोर खोजें', nav_labs:'पैथोलॉजी लैब', nav_blood:'ब्लड बैंक',
+    nav_disease:'बीमारी मार्गदर्शक', nav_helpline:'हेल्पलाइन सूची',
+    emergency_banner:'चिकित्सा आपातकाल? अभी 108 पर कॉल करें — मुफ्त, 24x7',
+    call:'कॉल करें', directions:'दिशा-निर्देश', nearMe:'मेरी लोकेशन का उपयोग करें', distanceAway:'दूर',
+    searchPlaceholder:'खोजें…', bookNow:'अपॉइंटमेंट बुक करें', viewOnMap:'मानचित्र पर देखें',
+    specialty:'विशेषज्ञता', hospital:'अस्पताल', selectDate:'तारीख', selectTime:'समय',
+    patientName:'मरीज़ का नाम', patientPhone:'फ़ोन नंबर', confirmBooking:'बुकिंग की पुष्टि करें',
+    bookingSuccess:'अपॉइंटमेंट अनुरोध भेजा गया! संदर्भ', myBookings:'मेरी बुकिंग', noBookings:'अभी कोई बुकिंग नहीं।',
+    findingLocation:'आपकी लोकेशन ढूंढ रहे हैं…', locationDenied:'लोकेशन उपलब्ध नहीं — सभी धुळे लिस्टिंग दिखाई जा रही हैं।',
+    liveFromOSM:'आपकी लोकेशन के पास OpenStreetMap से लाइव परिणाम', category:'श्रेणी',
+    urgency_emergency:'आपातकाल', urgency_soon:'जल्द डॉक्टर से मिलें', urgency_routine:'सामान्य',
+    recommendedFor:'इसके लिए अनुशंसित', nearestHospitals:'निकटतम मिलते-जुलते अस्पताल',
+    nearestLabs:'नज़दीकी पैथोलॉजी लैब', nearestAmbulance:'निकटतम एम्बुलेंस सेवाएं',
+    nearestBlood:'नज़दीकी ब्लड बैंक', selectCondition:'लक्षण या बीमारी चुनें',
+    language:'भाषा', home:'होम', cancel:'रद्द करें', status:'स्थिति', address:'पता',
+    hours:'समय', verified:'स्रोत', type:'प्रकार', all:'सभी', gettingDirections:'मानचित्र दिशा-निर्देश खोले जा रहे हैं…'
+  },
+  mr: {
+    appName:'धुळे हेल्थ कनेक्ट', tagline:'तुमच्या शहराची आणीबाणी व आरोग्य डिरेक्टरी',
+    nav_dashboard:'डॅशबोर्ड', nav_appointment:'डॉक्टर अपॉइंटमेंट', nav_ambulance:'रुग्णवाहिका शोधा',
+    nav_medical:'मेडिकल दुकान शोधा', nav_labs:'पॅथॉलॉजी लॅब', nav_blood:'ब्लड बँक',
+    nav_disease:'आजार मार्गदर्शक', nav_helpline:'हेल्पलाइन यादी',
+    emergency_banner:'वैद्यकीय आणीबाणी? आत्ताच 108 वर कॉल करा — मोफत, 24x7',
+    call:'कॉल करा', directions:'दिशादर्शक', nearMe:'माझे लोकेशन वापरा', distanceAway:'दूर',
+    searchPlaceholder:'शोधा…', bookNow:'अपॉइंटमेंट बुक करा', viewOnMap:'नकाशावर पहा',
+    specialty:'विशेषज्ञता', hospital:'रुग्णालय', selectDate:'तारीख', selectTime:'वेळ',
+    patientName:'रुग्णाचे नाव', patientPhone:'फोन नंबर', confirmBooking:'बुकिंग निश्चित करा',
+    bookingSuccess:'अपॉइंटमेंट विनंती पाठवली! संदर्भ', myBookings:'माझ्या बुकिंग्स', noBookings:'अजून बुकिंग नाही.',
+    findingLocation:'तुमचे लोकेशन शोधत आहोत…', locationDenied:'लोकेशन उपलब्ध नाही — सर्व धुळे यादी दाखवत आहोत.',
+    liveFromOSM:'तुमच्या लोकेशनजवळ OpenStreetMap वरून थेट निकाल', category:'प्रकार',
+    urgency_emergency:'आणीबाणी', urgency_soon:'लवकर डॉक्टरांना भेटा', urgency_routine:'नियमित',
+    recommendedFor:'यासाठी शिफारस केलेले', nearestHospitals:'जवळची जुळणारी रुग्णालये',
+    nearestLabs:'जवळील पॅथॉलॉजी लॅब', nearestAmbulance:'जवळच्या रुग्णवाहिका सेवा',
+    nearestBlood:'जवळील ब्लड बँक', selectCondition:'लक्षण किंवा आजार निवडा',
+    language:'भाषा', home:'होम', cancel:'रद्द करा', status:'स्थिती', address:'पत्ता',
+    hours:'वेळ', verified:'स्रोत', type:'प्रकार', all:'सर्व', gettingDirections:'नकाशा दिशा उघडत आहे…'
+  }
+};
